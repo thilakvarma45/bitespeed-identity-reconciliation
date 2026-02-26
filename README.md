@@ -77,7 +77,7 @@ The UI will be available at `http://localhost:5173`
 
 ## 🔗 Hosted Endpoint
 
-> _Add your hosted URL here after deployment (e.g., Render, Railway)_
+**Live API:** [https://bitespeed-identity-reconciliation-4qws.onrender.com/identify](https://bitespeed-identity-reconciliation-4qws.onrender.com/identify)
 
 ## 📋 How It Works
 
