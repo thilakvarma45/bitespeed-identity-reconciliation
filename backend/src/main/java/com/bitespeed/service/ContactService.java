@@ -109,15 +109,7 @@ public class ContactService {
             return false;
         }
 
-        // Check if email exists in any contact and phone exists in any contact
-        boolean emailExists = allContacts.stream()
-                .anyMatch(c -> email.equals(c.getEmail()));
-        boolean phoneExists = allContacts.stream()
-                .anyMatch(c -> phoneNumber.equals(c.getPhoneNumber()));
-
-        // New secondary is needed if one of the fields is new
-        // (i.e., both fields match existing contacts individually but not together,
-        // OR one field is completely new)
+        // New secondary is needed if the exact combination doesn't exist yet
         return !exactMatchExists;
     }
 
